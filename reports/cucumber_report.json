@@ -1,0 +1,687 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "guest-user-checkout;add-product-to-cart-from-plp",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add product to cart from PLP",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 301160200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the Product Listing Page",
+            "match": {
+              "location": "stepDefinitions\\plpSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3513141499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user adds a product to the cart from PLP",
+            "match": {
+              "location": "stepDefinitions\\plpSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2455672200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "product should be added to the cart successfully",
+            "match": {
+              "location": "stepDefinitions\\plpSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10151700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "cart icon should show correct product count",
+            "match": {
+              "location": "stepDefinitions\\plpSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5207699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@plp",
+            "line": 5
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "guest-user-checkout;add-product-to-cart-from-pdp",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add product to cart from PDP",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204927499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the Product Listing Page",
+            "match": {
+              "location": "stepDefinitions\\plpSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3095346100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user navigates to the PDP from PLP",
+            "match": {
+              "location": "stepDefinitions\\pdpSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3641589299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "product details should be correct in PDP",
+            "match": {
+              "location": "stepDefinitions\\pdpSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30362900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user adds the product to the cart from PDP",
+            "match": {
+              "location": "stepDefinitions\\pdpSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 802513300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "product should be added to the cart successfully from PDP",
+            "match": {
+              "location": "stepDefinitions\\pdpSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93002500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pdp",
+            "line": 10
+          },
+          {
+            "name": "@regression",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "guest-user-checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Guest user checkout",
+    "tags": [],
+    "uri": "features\\guestCheckout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;valid-log-in",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Valid log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 188194600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is in login page or form",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3616850300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid email \"sa@b.com\" and password \"Playwright!987\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 829326600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be logged in or get valid message \"Hello sa2\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86738000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;valid-log-in",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Valid log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 194155699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is in login page or form",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3542171899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid email \"sa@b.com\" and password \"WrongPass\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 659163100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be logged in or get valid message \"The password you entered for the username sa@b.com is incorrect\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179410399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;valid-log-in",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Valid log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 177846799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is in login page or form",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3366612400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid email \"validuser@example.com\" and password \"\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 593361799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be logged in or get valid message \"Password is required.\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154960200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;valid-log-in",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Valid log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 162331299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is in login page or form",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3313516099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid email \"\" and password \"somepass\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 549286599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be logged in or get valid message \"Username is required.\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190463400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;valid-log-in",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Valid log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 198996099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is in login page or form",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3578173900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid email \"\" and password \"\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 493688000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be logged in or get valid message \"Username is required.\"",
+            "match": {
+              "location": "stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157821099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register-user-functionality;valid-registration",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Valid registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 168296600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is in registration page or form",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3568421099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user registers with valid details",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3087080700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should be successfully registered and see the valid message",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72707699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "register-user-functionality;register-button-disabled",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "register button disabled",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212749199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "user is in registration page or form",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3555533000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user does not enter email or password and click on register",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442881200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "valid error message should be displayed",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110768499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "register-user-functionality;register-button-stays-disabled-with-weak-or-empty-password",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "register button stays disabled with weak or empty password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 219519500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "user is in registration page or form",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3327443499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user registers with valid email and weak or empty password",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 982899799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "register button should be disabled",
+            "match": {
+              "location": "stepDefinitions\\registerSteps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19800600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "register-user-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register user functionality",
+    "tags": [],
+    "uri": "features\\register.feature"
+  }
+]
